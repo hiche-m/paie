@@ -175,6 +175,7 @@ const AddCycle = () => {
 
     const handleAddOnClick = async (e) => {
         e.preventDefault();
+        console.log(inputs);
         for (const [key, input] of Object.entries(inputs)) {
             if (input === null || input === undefined || input === "") {
                 window.alert("Veuillez remplissez tous les champs.");
@@ -211,7 +212,7 @@ const AddCycle = () => {
         if (response !== null) {
             window.alert("Erreur: ", response);
         } else {
-            window.alert("Cycle ajouté!");
+            window.alert(exists ? "Cycle modifié!" : "Cycle ajouté!");
             resetInputs();
         }
     };
@@ -229,8 +230,8 @@ const AddCycle = () => {
         changeInputs("sexe", params["sexe"][cycle["Sexe"]]);
         changeInputs("echelon", params["echelons"][cycle["Echélon"]]);
         changeInputs("rendement", params["rendements"][cycle["Rendement"]]);
-        changeInputs("mutuel", params["mutuelle"][cycle["Mutuelle S]ociale"]]);
-        changeInputs("situation", params["situaions"][cycle["Situation f]amiliale"]]);
+        changeInputs("mutuel", params["mutuelle"][cycle["Mutuelle Sociale"]]);
+        changeInputs("situation", params["situaions"][cycle["Situation familiale"]]);
         changeInputs("poste", cycle["Poste supérieur"]);
         changeInputs("enfants", cycle["Nombre d'enfants"]);
         changeInputs("dixEnfants", cycle["Enfants (+10)"]);

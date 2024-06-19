@@ -88,19 +88,19 @@ const FichePDF = forwardRef((printData, ref) => {
                             <span className='flex flex-row grow'></span>GAINS<span className='flex flex-row grow'></span>
                         </span>
                         <span className='flex flex-col pb-5 space-y-1 items-center'>
-                            <span>{Functions.formatNumber(infoSalaire.Salaire_base) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.ind_exp) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.ind_poste_sup) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.ind_doc) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.ind_enc_suivi) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.ind_qual) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.Alloc_Fam) ?? "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.Salaire_base) !== NaN ? Functions.formatNumber(infoSalaire.Salaire_base) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.ind_exp) !== NaN ? Functions.formatNumber(infoSalaire.ind_exp) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.ind_poste_sup) !== NaN ? Functions.formatNumber(infoSalaire.ind_poste_sup) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.ind_doc) !== NaN ? Functions.formatNumber(infoSalaire.ind_doc) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.ind_enc_suivi) !== NaN ? Functions.formatNumber(infoSalaire.ind_enc_suivi) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.ind_qual) !== NaN ? Functions.formatNumber(infoSalaire.ind_qual) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.Alloc_Fam) !== NaN ? Functions.formatNumber(infoSalaire.Alloc_Fam) : "/"}</span>
                             <span className='invisible'>/</span>
                             <span className='invisible'>/</span>
                             <span className='invisible'>/</span>
                             <span className='invisible'>/</span>
                             <span className='invisible'>/</span>
-                            <span className='italic'>{Functions.formatNumber(infoSalaire.Montant_brute) ?? "/"}</span>
+                            <span className='italic'>{Functions.formatNumber(infoSalaire.Montant_brute) !== NaN ? Functions.formatNumber(infoSalaire.Montant_brute) : "/"}</span>
                         </span>
                     </div>
                     <div title='Retenues' className='w-1/3 rounded-tr-lg border border-black'>
@@ -115,18 +115,18 @@ const FichePDF = forwardRef((printData, ref) => {
                             <span className='invisible'>/</span>
                             <span className='invisible'>/</span>
                             <span className='invisible'>/</span>
-                            <span>{Functions.formatNumber(infoSalaire.ss) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.valeur_irg) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.cot_mutuelle) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.retenu_abs) ?? "/"}</span>
-                            <span>{Functions.formatNumber(infoSalaire.retenus) ?? "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.ss) !== NaN ? Functions.formatNumber(infoSalaire.ss) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.valeur_irg) !== NaN ? Functions.formatNumber(infoSalaire.valeur_irg) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.cot_mutuelle) !== NaN ? Functions.formatNumber(infoSalaire.cot_mutuelle) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.retenu_abs) !== NaN ? Functions.formatNumber(infoSalaire.retenu_abs) : "/"}</span>
+                            <span>{Functions.formatNumber(infoSalaire.retenus) !== NaN ? Functions.formatNumber(infoSalaire.retenus) : "/"}</span>
                             <span className='invisible'>/</span>
                         </span>
                     </div>
                 </div>
                 <span title='total' className='flex flex-row justify-end'>
                     <span className='border border-black rounded-lg p-2 italic'>
-                        <span className='mr-10 font-bold'>Net à Payer:</span> {Functions.formatNumber(infoSalaire.Salaire) ?? "/"}</span>
+                        <span className='mr-10 font-bold'>Net à Payer:</span> {Functions.formatNumber(infoSalaire.Salaire) !== NaN ? Functions.formatNumber(infoSalaire.Salaire) : "/"}</span>
                 </span>
                 <span className='flex flex-row grow'></span>
                 <span title='signature' className='flex flex-row justify-end items-end pt-3'>
