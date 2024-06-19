@@ -1,0 +1,103 @@
+{
+  "Enseignant": {
+    "54645fsdf": {
+      "Echélon": 0,
+      "Enfants (+10)": 2,
+      "Grade": 5,
+      "Mutuelle Sociale": 1,
+      "Nom": "Besbes",
+      "Poste supérieur": 18,
+      "Prénom": "Yousra",
+      "Rendement": 2,
+      "Situation familiale": 0
+    },
+    "5d5d5de12x": {
+      "Echélon": 1,
+      "Enfants (+10)": 2,
+      "Grade": 0,
+      "Mutuelle Sociale": 0,
+      "Nom": "Rahmani",
+      "Poste supérieur": 1,
+      "Prénom": "Chaimaa",
+      "Rendement": 3,
+      "Situation familiale": 1
+    },
+    "XsjIl20F33k": {
+      "Echélon": 0,
+      "Enfants (+10)": 10,
+      "Grade": 4,
+      "Mutuelle Sociale": 0,
+      "Nom": "Rahmani",
+      "Poste supérieur": 10,
+      "Prénom": "Hichem",
+      "Rendement": 0,
+      "Situation familiale": 0
+    }
+  },
+  "Parametres": {
+    "echelons": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "grades": [
+      "Assistant",
+      "MAB",
+      "MAA",
+      "MCB",
+      "MCA",
+      "Professeur"
+    ],
+    "mutuelle": [
+      "Non bénéficiaire",
+      "Bénéficiaire"
+    ],
+    "posts": [
+      "Sans poste supérieur",
+      "Chef de déoartement à l'école supérieure",
+      "Directeur adjoint à l'école supérieure",
+      "Directeur de l'école supérieure",
+      "Responsable de l’équipe de la spécialité",
+      "Responsable de l’équipe de la filière de formation",
+      "Responsable de l’équipe du domaine de formation",
+      "Chef de département à l'institut",
+      "Directeur adjoint à l'institut",
+      "Directeur d'institut",
+      "Responsable du centre d'enseignement intensif des langues au centre universitaire",
+      "Directeur adjoint au centre universitaire",
+      "Directeur du centre universitaire",
+      "Chef de département adjoint à la faculté",
+      "Chef de département à la faculté",
+      "Vice-doyen",
+      "Doyen",
+      "Responsable du centre d'enseignement intensif des langues à l'université",
+      "Vice-recteur",
+      "Recteur"
+    ],
+    "rendements": [
+      "0%",
+      "5%",
+      "10%",
+      "15%",
+      "20%",
+      "25%",
+      "30%",
+      "35%",
+      "40%"
+    ],
+    "situaions": [
+      "Célibataire",
+      "Marié(e)"
+    ]
+  }
+}
